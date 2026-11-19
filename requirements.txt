@@ -1,0 +1,28 @@
+# --- Données & calcul ---
+numpy>=1.26,<3
+pandas>=2.1
+scipy>=1.11
+scikit-learn>=1.4
+pyyaml>=6.0
+python-dotenv>=1.0
+tqdm>=4.66
+requests>=2.31
+
+# --- Visualisation / notebooks ---
+matplotlib>=3.8
+seaborn>=0.13
+jupyterlab>=4.0
+ipykernel>=6.29
+
+# --- NLP / RAG ---
+sentence-transformers>=3.0
+faiss-cpu>=1.8
+chromadb>=0.5
+rank-bm25==0.2.2
+nltk>=3.8
+
+# --- Interface ---
+streamlit>=1.36
+
+# --- Données Kaggle ---
+kaggle>=1.6

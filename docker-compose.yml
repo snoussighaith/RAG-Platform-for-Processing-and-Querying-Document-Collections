@@ -1,0 +1,32 @@
+services:
+  # --- Le LLM, dans son propre conteneur ---
+  ollama:
+    image: ollama/ollama:latest
+    container_name: ollama
+    volumes:
+      - ollama_models:/root/.ollama      # modèles conservés entre les redémarrages
+    ports:
+      - "127.0.0.1:11434:11434"
+    restart: unless-stopped
+
+  # --- Le code du projet ---
+  rag:
+    build: .
+    image: projet7-rag:latest
+    container_name: rag
+    working_dir: /workspace
+    volumes:
+      - .:/workspace
+      - hf_cache:/cache/huggingface
+    env_file: .env
+    environment:
+      - OLLAMA_HOST=http://ollama:11434  # le conteneur "rag" joint "ollama" par son nom
+    depends_on:
+      - ollama
+    ports:
+      - "127.0.0.1:8888:8888"
+      - "127.0.0.1:8501:8501"
+
+volumes:
+  hf_cache:
+  ollama_models:

@@ -1,0 +1,17 @@
+# Environnement local inutile (on travaille dans Docker)
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+
+# Secrets : ne jamais versionner
+.env
+kaggle.json
+.kaggle/
+
+# Données et index : reconstruits par script
+data/raw/
+data/processed/
+indexes/
+chroma_db/
+*.pkl
+*.faiss

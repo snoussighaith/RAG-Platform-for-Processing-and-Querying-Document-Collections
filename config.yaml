@@ -1,0 +1,44 @@
+
+seed: 42
+
+data:
+  raw_dir: data/raw
+  processed_dir: data/processed
+  eval_dir: data/eval
+
+embeddings:
+  device: cpu
+
+  model_a:
+    name: sentence-transformers/all-MiniLM-L6-v2
+    query_prefix: ""
+    passage_prefix: ""
+
+  model_b:
+    name: BAAI/bge-small-en-v1.5
+    query_prefix: "Represent this sentence for searching relevant passages: "
+    passage_prefix: ""
+
+  model_c:
+    name: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+    query_prefix: ""
+    passage_prefix: ""
+
+  model_d_optionnel:
+    name: intfloat/multilingual-e5-small
+    query_prefix: "query: "
+    passage_prefix: "passage: "
+
+reranker:
+  model: cross-encoder/ms-marco-MiniLM-L-6-v2
+
+retrieval:
+  top_k: 5
+
+llm:
+  provider: ollama
+  model: qwen2.5:3b-instruct
+  model_alt: llama3.2:3b
+  temperature: 0.0
+  seed: 42
+  host: http://ollama:11434
