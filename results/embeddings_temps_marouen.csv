@@ -1,0 +1,13 @@
+cle,modele,strategie,n_chunks,dim,max_seq_length,passage_prefix,device,machine,secondes,chunks_par_s,torch,sentence_transformers
+model_a,sentence-transformers/all-MiniLM-L6-v2,fixed_100_o20,7295,384,256,,cpu,marouen,96.2,75.8,2.15.0+cpu,6.3.0
+model_a,sentence-transformers/all-MiniLM-L6-v2,fixed_200_o40,3813,384,256,,cpu,marouen,88.9,42.9,2.15.0+cpu,6.3.0
+model_a,sentence-transformers/all-MiniLM-L6-v2,sent_150,5084,384,256,,cpu,marouen,95.2,53.4,2.15.0+cpu,6.3.0
+model_b,BAAI/bge-small-en-v1.5,fixed_100_o20,7295,384,512,,cpu,marouen,190.2,38.4,2.15.0+cpu,6.3.0
+model_b,BAAI/bge-small-en-v1.5,fixed_200_o40,3813,384,512,,cpu,marouen,189.3,20.1,2.15.0+cpu,6.3.0
+model_b,BAAI/bge-small-en-v1.5,sent_150,5084,384,512,,cpu,marouen,185.9,27.4,2.15.0+cpu,6.3.0
+model_c,sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2,fixed_100_o20,7295,384,128,,cpu,marouen,180.3,40.5,2.15.0+cpu,6.3.0
+model_c,sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2,fixed_200_o40,3813,384,128,,cpu,marouen,92.6,41.2,2.15.0+cpu,6.3.0
+model_c,sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2,sent_150,5084,384,128,,cpu,marouen,122.1,41.6,2.15.0+cpu,6.3.0
+model_d_optionnel,intfloat/multilingual-e5-small,fixed_100_o20,7295,384,512,passage: ,cpu,marouen,218.5,33.4,2.15.0+cpu,6.3.0
+model_d_optionnel,intfloat/multilingual-e5-small,fixed_200_o40,3813,384,512,passage: ,cpu,marouen,225.6,16.9,2.15.0+cpu,6.3.0
+model_d_optionnel,intfloat/multilingual-e5-small,sent_150,5084,384,512,passage: ,cpu,marouen,209.8,24.2,2.15.0+cpu,6.3.0
