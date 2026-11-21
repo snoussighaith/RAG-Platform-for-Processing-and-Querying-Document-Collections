@@ -15,3 +15,5 @@ indexes/
 chroma_db/
 *.pkl
 *.faiss
+~$rtie 0.docx
+Partie 0.docx
