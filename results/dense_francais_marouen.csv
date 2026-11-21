@@ -1,0 +1,13 @@
+modele,strategie,n_questions_fr,mrr_en,mrr_fr,recall_en,recall_fr
+model_a,fixed_100_o20,6,0.769,0.583,0.833,0.667
+model_a,fixed_200_o40,6,0.774,0.556,0.833,0.667
+model_a,sent_150,6,0.792,0.5,1.0,0.667
+model_b,fixed_100_o20,6,0.867,0.389,1.0,0.667
+model_b,fixed_200_o40,6,0.889,0.472,1.0,0.667
+model_b,sent_150,6,0.833,0.5,1.0,0.667
+model_c,fixed_100_o20,6,0.783,0.736,1.0,0.833
+model_c,fixed_200_o40,6,0.764,0.631,1.0,1.0
+model_c,sent_150,6,0.672,0.708,1.0,1.0
+model_d_optionnel,fixed_100_o20,6,0.889,0.917,1.0,1.0
+model_d_optionnel,fixed_200_o40,6,0.917,0.889,1.0,1.0
+model_d_optionnel,sent_150,6,1.0,1.0,1.0,1.0
